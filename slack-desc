@@ -1,0 +1,11 @@
+pygobject: PyGObject - Python wrapper for the GObject library
+pygobject:
+pygobject: PyGObject provides a convenient wrapper for the GObject+ library
+pygobject: for use in Python programs, and takes care of many of the boring
+pygobject: details such as managing memory and type casting. When combined
+pygobject: with PyGTK, PyORBit, and gnome-python, it can be used to write
+pygobject: full-featured GNOME applications.
+pygobject:
+pygobject:
+pygobject: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
+pygobject:
