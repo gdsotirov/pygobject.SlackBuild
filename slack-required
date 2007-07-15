@@ -1,2 +1,2 @@
-glib >= 2.10.3
-python >= 2.4
+glib2 >= 2.12.12
+python >= 2.5
