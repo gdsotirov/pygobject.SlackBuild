@@ -18,7 +18,7 @@ fix_source
 
 CFLAGS=$SLKCFLAGS \
 CXXFLAGS=$SLKCFLAGS \
-./configure --build=$ARCH-pc-linux-gnu \
+./configure --build=$ARCH-slackware-linux \
             --prefix=/usr
 make all
 
