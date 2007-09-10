@@ -7,7 +7,7 @@
 . ../slack-package.conf
 
 NAME=pygobject
-VERSION=2.12.3
+VERSION=2.13.2
 BUILD=1
 
 cd $TMP
@@ -20,7 +20,7 @@ CFLAGS=$SLKCFLAGS \
 CXXFLAGS=$SLKCFLAGS \
 ./configure --build=$ARCH-slackware-linux \
             --prefix=/usr
-make all
+make all || exit 1
 
 PKG="$TMP/package-$NAME"
 mkdir -p $PKG
@@ -33,6 +33,7 @@ make DESTDIR=$PKG install
 mkdir -p $PKG/install
 install -m 644 $CWD/slack-desc     $PKG/install
 install -m 644 $CWD/slack-required $PKG/install
+
 mkdir -p $PKG/usr/src/slackbuilds/$NAME-$VERSION
 install -m 644 $CWD/slack-desc       $PKG/usr/src/slackbuilds/$NAME-$VERSION
 install -m 644 $CWD/slack-required   $PKG/usr/src/slackbuilds/$NAME-$VERSION
